@@ -1,5 +1,5 @@
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #DA7D02;
+$global-link-color: #D4Af37;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -17,24 +17,50 @@ $global-link-color: #DA7D02;
 }
 
 #nav {
-filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
+// filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
   background-image: url(../assets/jbl_Pattern_Watermark.jpg);
   background-size: cover;
-// background: linear-gradient(180deg, rgb(1, 1, 1) 10%, rgba(12, 12, 12, 0) 150%);
 }
 
 #navmenu {
   margin: 0px 20px;
 }
 
-#navlogo {
-  margin: 0px;
-  filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
+#navtext {
+  color: #D4Af37;
+}
+
+.navlogo {
+  height: 150px;
+  padding: 10px 10px 20px 10px;
+  // filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
+}
+
+.uk-offcanvas-bar {
+  background-image: url(../assets/jbl_Pattern_Watermark.jpg);
+}
+
+#hamburger {
+  filter: invert(73%) sepia(62%) saturate(510%) hue-rotate(0deg) brightness(90%) contrast(85%);
+}
+
+.sidenavlogo {
+  height: 150px;
+  width: 170px;
+  padding: 20px;
+}
+
+#closebutton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #D4Af37;
+  font-size: 20pt;
 }
 
 .booknav {
   margin: 0px 20px;
-  filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
+  color: #D4Af37;
 }
 
 #mobilemenu {
@@ -47,6 +73,7 @@ background-color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 550px;
 }
 
 #homeabout {
