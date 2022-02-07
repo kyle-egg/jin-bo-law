@@ -74,6 +74,7 @@ background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 550px;
+  max-height: 700px;
 }
 
 #homeabout {
@@ -87,6 +88,54 @@ background: -moz-radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,2
 background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 150%);
 background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 150%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#elevate {
+  padding: 50px;
+}
+
+#whatson {
+  background-image: url(../assets/fire2.jpg);
+  background-size: cover;
+  height: 350px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#menu {
+  background-image: url(../assets/cocktails.jpg);
+  background-size: cover;
+  height: 350px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#events {
+  background-image: url(../assets/events.jpeg);
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#homethumb {
+  color: white;
+  font-weight: 700;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  background: -webkit-linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  background: linear-gradient(140deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+  height: 300px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.resbox{
+  height: 400px;
 }
 
 // filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
