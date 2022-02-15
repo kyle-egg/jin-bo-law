@@ -1,5 +1,5 @@
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #D4Af37;
+$global-link-color: #dbac6d;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -13,7 +13,6 @@ $global-link-color: #D4Af37;
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
 }
 
 #nav {
@@ -27,7 +26,9 @@ $global-link-color: #D4Af37;
 }
 
 #navtext {
-  color: #D4Af37;
+  color: #dbac6d;
+  font-stretch: expanded;
+  font-weight: 100;
 }
 
 .navlogo {
@@ -44,6 +45,14 @@ $global-link-color: #D4Af37;
   filter: invert(73%) sepia(62%) saturate(510%) hue-rotate(0deg) brightness(90%) contrast(85%);
 }
 
+#bookhidden {
+  padding: 20px;
+  font-size: smaller;
+  color: #dbac6d;
+  font-stretch: expanded;
+  font-weight: 50;
+}
+
 .sidenavlogo {
   height: 150px;
   width: 170px;
@@ -54,13 +63,13 @@ $global-link-color: #D4Af37;
   outline: none;
   border: none;
   background-color: transparent;
-  color: #D4Af37;
+  color: #dbac6d;
   font-size: 20pt;
 }
 
 .booknav {
   margin: 0px 20px;
-  color: #D4Af37;
+  color: #dbac6d;
 }
 
 #mobilemenu {
@@ -73,13 +82,23 @@ background-color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 550px;
-  max-height: 700px;
+  height: 550px;
 }
 
 #homeabout {
   background-image: url(../assets/homeabouttwo.jpg);
   background-size: cover;
+}
+
+#abouttitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.paratext {
+  color: whitesmoke;
+  font-weight: 100;
 }
 
 #whitegradient {
@@ -136,6 +155,114 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
 .resbox{
   height: 400px;
+}
+
+.bluecontainer {
+  background-color: #0c3151;
+}
+
+.darkbluecontainer {
+  background-color: #0b2641;
+}
+
+.goldcontainer {
+  background-color: #dbac6d;
+}
+
+.blackcontainer {
+  background-color: black;
+}
+
+#whatsonhero {
+  background-image: url(../assets/fire.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#giftvoucherhero {
+  background-image: url(../assets/3ouJUDag.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#vouchertitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#footnav {
+  // filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
+    background-image: url(../assets/jbl_Pattern_Watermark.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+.address {
+  text-align: center;
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+
+@media only screen and (max-width: 811px) {
+  #homehero {
+    background-size: cover;
+    background-attachment: scroll;
+    height: 500px;
+  }
+  #whatson {
+    height: 270px;
+  }
+  
+  #menu {
+    height: 270px;
+  }
+  
+  #events {
+    height: 270px;
+  }
+  #homethumb {
+    font-size: medium;
+    height: 270px;
+  }
+  #navtext {
+    font-stretch: expanded;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #whatson {
+    height: 150px;
+  }
+  
+  #menu {
+    height: 150px;
+  }
+  
+  #events {
+    height: 150px;
+  }
+  .bluecontainer {
+    background-color: #0c3151;
+    height: 500px;
+  }
+  #abouttitle {
+    margin-top: 200px;
+  }
+  #homethumb {
+    height: 150px;
+    font-size: small;
+  }
 }
 
 // filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);

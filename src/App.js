@@ -9,6 +9,8 @@ import GiftVouchers from './components/GiftVouchers.js'
 import PrivateEvents from './components/PrivateEvents.js'
 import ContactUs from './components/ContactUs.js'
 import BookNow from './components/BookNow.js'
+import SideNav from './components/SideNav.js'
+import Footer from './components/Footer.js'
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
+        <SideNav />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -39,6 +42,7 @@ function App() {
             <BookNow />
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </>
   )

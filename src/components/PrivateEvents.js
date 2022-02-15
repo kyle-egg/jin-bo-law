@@ -1,7 +1,7 @@
 function PrivateEvents() {
 
   return (
-    <h1>Home</h1>
+    <h1>Private Events</h1>
   )
 }
 
