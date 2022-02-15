@@ -177,24 +177,51 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   background-image: url(../assets/fire.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 525px;
 }
 
 #giftvoucherhero {
-  background-image: url(../assets/3ouJUDag.jpeg);
+  background-image: url(../assets/giftvoucherhero.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 550px;
 }
 
 #vouchertitle {
   color: #0b2641;
   font-weight: 100;
   font-stretch: expanded;
+}
+
+#menuhero {
+  background-image: url(../assets/menuhero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#eventshero {
+  background-image: url(../assets/inside.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+#contacthero {
+  background-image: url(../assets/view3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 425px;
 }
 
 #footnav {

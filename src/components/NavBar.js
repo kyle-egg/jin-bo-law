@@ -17,7 +17,7 @@ function NavBar() {
             <li><a id= "navtext" href="/giftvouchers">Gift Vouchers</a></li>
             <li><a id= "navtext" href="/events">Private Events</a></li>
             <li><a id= "navtext" href="https://my.matterport.com/show/?m=3LVPz6vi2vA">Virtual Tour</a></li>
-            <li><a id= "navtext" href="#">Contact Us</a></li>
+            <li><a id= "navtext" href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div className="uk-navbar-right">

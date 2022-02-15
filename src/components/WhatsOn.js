@@ -11,12 +11,6 @@ function WhatsOn() {
             <br></br>
             <p className="paratext"> We are not just your ordinary skybar.<br></br>
             At Jin Bo Law we are determined to provide the highest quality of entertainment and parties to keep you coming back for more.<br></br> From Skyline Sessions to our glamerous champagne parties; we have the ultimate line-up to match our stunning views, cocktails and service.
-
-
-
-
-
-
             </p>
           </div>
         </div>     
