@@ -240,6 +240,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   font-stretch: expanded;
 }
 
+.drinkname {
+  text-align: left;
+}
+
+.drinkdescription {
+  text-align: left;
+}
+
+.drinkprice {
+  float: right;
+}
 
 @media only screen and (max-width: 811px) {
   #homehero {
