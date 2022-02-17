@@ -13,7 +13,7 @@ function Footer() {
         </a>
         <h6 className="address">
         RESERVATIONS@JINBOLAW.CO.UK<br></br>
-        0208 XXX XXXX
+        +44 (0) 208 947 2582
         </h6>
         <h6 className="address">
         14TH FLOOR DORSETT CITY<br></br>

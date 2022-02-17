@@ -1,5 +1,5 @@
 
-
+  
 function Home() {
   return (
     <section>
@@ -22,19 +22,25 @@ function Home() {
       <section>
         <div className="uk-child-width-1-3@s uk-flex" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 120; repeat: true">
           <div className="goldcontainer">
-            <div id="whatson" className="uk-card uk-card-default uk-card-body">
-              <h3 id="homethumb" className="uk-card-title">WHAT&apos;S ON</h3>
-            </div>
+            <a href="/whatson">
+              <div id="whatson" className="uk-card uk-card-default uk-card-body">
+                <h3 id="homethumb" className="uk-card-title">WHAT&apos;S ON</h3>
+              </div>
+            </a>
           </div>
           <div className="goldcontainer">
-            <div id="menu"className="uk-card uk-card-default uk-card-body">
-              <h3 id="homethumb" className="uk-card-title">MENU</h3>
-            </div>
+            <a href="/menu">
+              <div id="menu" className="uk-card uk-card-default uk-card-body">
+                <h3 id="homethumb" className="uk-card-title">MENU</h3>
+              </div>
+            </a>
           </div>
           <div className="goldcontainer">
-            <div id="events" className="uk-card uk-card-default uk-card-body">
-              <h3 id="homethumb" className="uk-card-title">PRIVATE EVENTS</h3>
-            </div>
+            <a href="/events">
+              <div id="events" className="uk-card uk-card-default uk-card-body">
+                <h3 id="homethumb" className="uk-card-title">PRIVATE EVENTS</h3>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -43,6 +49,7 @@ function Home() {
           <div>
             <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
               <h3 id="abouttitle"className="uk-text-lead">RESERVATIONS</h3>
+              
             </div>
           </div>     
         </div>

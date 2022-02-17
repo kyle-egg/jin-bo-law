@@ -15,26 +15,28 @@ $global-link-color: #dbac6d;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 #nav {
 // filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%); 
   background-image: url(../assets/jbl_Pattern_Watermark.jpg);
   background-size: cover;
 }
 
-#navmenu {
-  margin: 0px 20px;
-}
 
 #navtext {
   color: #dbac6d;
-  font-stretch: expanded;
+  font-stretch: semi-expanded;
   font-weight: 100;
+  font-size: small;
 }
 
 .navlogo {
-  height: 150px;
-  padding: 10px 10px 20px 10px;
-  // filter: invert(67%) sepia(100%) saturate(326%) hue-rotate(1deg) brightness(89%) contrast(89%);
+  height: 125px;
+  width: auto;
+  padding: 10px 5px 20px 5px;
 }
 
 .uk-offcanvas-bar {
@@ -42,15 +44,14 @@ $global-link-color: #dbac6d;
 }
 
 #hamburger {
-  filter: invert(73%) sepia(62%) saturate(510%) hue-rotate(0deg) brightness(90%) contrast(85%);
+  filter: invert(76%) sepia(27%) saturate(630%) hue-rotate(352deg) brightness(89%) contrast(92%);
+  margin-top: 15px;
 }
 
-#bookhidden {
-  padding: 20px;
-  font-size: smaller;
+
+#ighidden {
   color: #dbac6d;
-  font-stretch: expanded;
-  font-weight: 50;
+  padding: 0px;
 }
 
 .sidenavlogo {
@@ -68,7 +69,7 @@ $global-link-color: #dbac6d;
 }
 
 .booknav {
-  margin: 0px 20px;
+  margin: 0px;
   color: #dbac6d;
 }
 
@@ -161,8 +162,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   background-color: #0c3151;
 }
 
-.darkbluecontainer {
-  background-color: #0b2641;
+.lightbluecontainer {
+  background-color: #12748c;
 }
 
 .goldcontainer {
