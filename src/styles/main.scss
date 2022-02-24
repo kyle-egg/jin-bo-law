@@ -242,14 +242,40 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
 .drinkname {
   text-align: left;
+  padding: 0px 50px;
 }
 
 .drinkdescription {
   text-align: left;
+  color: #2c4044;
+  padding: 0px 500px 0px 50px;
 }
 
 .drinkprice {
   float: right;
+  padding: 0px 50px 0px 50px;
+}
+
+.drinkglass {
+  float: right;
+  margin: 0px 50px 0px 50px;
+}
+
+.drinkbottle {
+  float: right;
+  padding: 0px 50px 0px 50px;
+}
+
+#served {
+  padding: 0px;
+}
+
+#glass {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+  padding: 0px 100px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 811px) {
