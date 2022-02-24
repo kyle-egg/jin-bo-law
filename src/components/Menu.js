@@ -253,6 +253,13 @@ function Menu() {
       <div id="homeabout" className="uk-child-width-1-1@s" uk-grid>
         <div className="lightbluecontainer">
           <div id="elevate" className="uk-background-cover uk-height-full uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
+            <div className="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #offset">
+              <a className="uk-button uk-button-primary" href="#cocktailssTitle" uk-scroll>COCKTAILS</a>
+              <a className="uk-button uk-button-primary" href="#gAndTsTitle" uk-scroll>WINES</a>
+              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
+              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
+              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
+            </div>
             <dl className="uk-description-list">
               <h3 id="abouttitle"className="uk-text-lead">COCKTAILS</h3>
               <h5 id="glass">GLASS</h5>
@@ -319,7 +326,7 @@ function Menu() {
                   <dt className="drinkname"><strong>{bottle.name} <span className="drinkprice">{bottle.bottle}</span></strong></dt>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">SPIRITS</h3>
+              <h3 id="spiritsTitle"className="uk-text-lead">SPIRITS</h3>
               <h5 id="glass">GLASS</h5>
               {spirits.map(spirit =>
                 <>
