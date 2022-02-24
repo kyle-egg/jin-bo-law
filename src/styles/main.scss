@@ -278,6 +278,46 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   text-align: right;
 }
 
+#stickymenu {
+  padding: 0px;
+}
+
+#cocktailsTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#gAndTsTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#champagneTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#winesTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#bottlesTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-button {
+  background-color:#12748c;
+  border: #dbac6d;
+  color: #dbac6d;
+  border-style: solid;
+  border-width: 1px;
+}
+
 @media only screen and (max-width: 811px) {
   #homehero {
     background-size: cover;

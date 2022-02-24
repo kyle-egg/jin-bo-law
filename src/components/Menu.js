@@ -253,15 +253,15 @@ function Menu() {
       <div id="homeabout" className="uk-child-width-1-1@s" uk-grid>
         <div className="lightbluecontainer">
           <div id="elevate" className="uk-background-cover uk-height-full uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
-            <div className="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #offset">
-              <a className="uk-button uk-button-primary" href="#cocktailssTitle" uk-scroll>COCKTAILS</a>
-              <a className="uk-button uk-button-primary" href="#gAndTsTitle" uk-scroll>WINES</a>
-              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
-              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
-              <a className="uk-button uk-button-primary" href="#spiritsTitle" uk-scroll>SPIRITS</a>
+            <div id='stickymenu' className="uk-card uk-card-default uk-card-body" uk-sticky="offset: 40; bottom: #offset">
+              <a className="uk-button" href="#cocktailsTitle" uk-scroll>COCKTAILS</a>
+              <a className="uk-button" href="#gAndTsTitle" uk-scroll>GIN & TONIC</a>
+              <a className="uk-button" href="#champagneTitle" uk-scroll>CHAMPAGNE</a>
+              <a className="uk-button" href="#winesTitle" uk-scroll>WINES</a>
+              <a className="uk-button" href="#bottlesTitle" uk-scroll>BOTTLE SERVICE</a>
             </div>
             <dl className="uk-description-list">
-              <h3 id="abouttitle"className="uk-text-lead">COCKTAILS</h3>
+              <h3 id="cocktailsTitle"className="uk-text-lead">COCKTAILS</h3>
               <h5 id="glass">GLASS</h5>
               {cocktials.map(cocktail =>
                 <>
@@ -269,7 +269,7 @@ function Menu() {
                   <dd className="drinkdescription">{cocktail.description}</dd>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">PREMIUM GIN & TONIC</h3>
+              <h3 id="gAndTsTitle"className="uk-text-lead">PREMIUM GIN & TONIC</h3>
               <h5 id="glass">GLASS</h5>
               {gAndT.map(gt =>
                 <>
@@ -277,7 +277,7 @@ function Menu() {
                   <dd className="drinkdescription">{gt.description}</dd>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">CHAMPAGNE</h3>
+              <h3 id="champagneTitle"className="uk-text-lead">CHAMPAGNE</h3>
               <h5 id="glass">GLASS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOTTLE</h5>
               {champagne.map(champagne =>
                 <>
@@ -291,7 +291,7 @@ function Menu() {
                   <dt className="drinkname"><strong>{size.name} <span className="drinkprice">{size.bottle}</span></strong></dt>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">RED WINE</h3>
+              <h3 id="winesTitle"className="uk-text-lead">RED WINE</h3>
               <h5 id="glass">GLASS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOTTLE</h5>
               {redWines.map(red =>
                 <>
@@ -319,14 +319,14 @@ function Menu() {
                   <dt className="drinkname"><strong>{sparkling.name} <span className="drinkglass">{sparkling.glass}</span><span className="drinkbottle"> {sparkling.bottle}</span></strong></dt>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">BOTTLE SERVICE MENU <br></br> All Served With Complementary Mixers </h3>
+              <h3 id="bottlesTitle"className="uk-text-lead">BOTTLE SERVICE MENU <br></br> All Served With Complementary Mixers </h3>
               <h5 id="glass">BOTTLE</h5>
               {bottleService.map(bottle =>
                 <>
                   <dt className="drinkname"><strong>{bottle.name} <span className="drinkprice">{bottle.bottle}</span></strong></dt>
                 </>
               )}
-              <h3 id="spiritsTitle"className="uk-text-lead">SPIRITS</h3>
+              <h3 id="abouttitle"className="uk-text-lead">SPIRITS</h3>
               <h5 id="glass">GLASS</h5>
               {spirits.map(spirit =>
                 <>
