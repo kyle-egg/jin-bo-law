@@ -1,4 +1,12 @@
+import React from 'react'
+
 function Menu() {
+
+  const generateShot = () => {
+    const x = spirits[Math.floor((Math.random() * 80))]
+    document.getElementById('shot').innerHTML = x.name
+    document.getElementById('shottype').innerHTML = x.type
+  }
 
   const cocktials = [
     { name: 'High Life', description: 'Akashi - Tai Umeshu Plum Liquor, Edmond Briotett Lychee Liquor, Zia Venetto Prosecco', price: 15.50 },
@@ -246,19 +254,124 @@ function Menu() {
     { name: 'Remy Martin XO', 								                type: 'Cognac', glass: 42 }
   ]
 
+  const filterTequila = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Tequila & Mezcal')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterVodka = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Vodka')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterGin = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Gin')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterRum = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Rum')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterAsian = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Asian Spirit')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterScotch = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Scotch')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterJapan = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Japanese')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterBourbon = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Bourbon, Irish, Rye')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
+  const filterCognac = () => {
+    if (spirits) {
+      return spirits.filter(spirit => {
+        return spirit.type.includes('Cognac')
+      }) 
+    } else {
+      return spirits
+    }
+  }
+
   return (
     <section>
       <div id="menuhero" className="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle">      
       </div>
-      <div id="homeabout" className="uk-child-width-1-1@s" uk-grid>
+      <div className="goldcontainer">
+        <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
+          <h3 id="vouchertitle">START WITH SHOTS!</h3>
+          <a id="shots" className="uk-button" onClick={generateShot}>ROLL THE DICE</a>
+          <h3 id="shot"></h3>
+          <h3 id="shottype"></h3>
+        </div>
         <div className="lightbluecontainer">
           <div id="elevate" className="uk-background-cover uk-height-full uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
-            <div id='stickymenu' className="uk-card uk-card-default uk-card-body" uk-sticky="offset: 40; bottom: #offset">
+            <div id='stickymenu' className="uk-card uk-card-default uk-card-body" uk-sticky="offset: 30; bottom: #offset">
               <a className="uk-button" href="#cocktailsTitle" uk-scroll>COCKTAILS</a>
               <a className="uk-button" href="#gAndTsTitle" uk-scroll>GIN & TONIC</a>
               <a className="uk-button" href="#champagneTitle" uk-scroll>CHAMPAGNE</a>
               <a className="uk-button" href="#winesTitle" uk-scroll>WINES</a>
               <a className="uk-button" href="#bottlesTitle" uk-scroll>BOTTLE SERVICE</a>
+              <a className="uk-button" href="#tequilaTitle" uk-scroll>TEQUILA & MEZCAL</a>
+              <a className="uk-button" href="#vodkaTitle" uk-scroll>VODKA</a>
+              <a className="uk-button" href="#ginTitle" uk-scroll>GIN</a>
+              <a className="uk-button" href="#rumTitle" uk-scroll>RUM</a>
+              <a className="uk-button" href="#asianTitle" uk-scroll>ASIAN SPIRITS</a>
+              <a className="uk-button" href="#scotchTitle" uk-scroll>SCOTCH</a>
+              <a className="uk-button" href="#japaneseTitle" uk-scroll>JAPANESE</a>
+              <a className="uk-button" href="#bourbonTitle" uk-scroll>BOURBON</a>
+              <a id="cognacbutton" className="uk-button" href="#cognacTitle" uk-scroll>COGNAC</a>
             </div>
             <dl className="uk-description-list">
               <h3 id="cocktailsTitle"className="uk-text-lead">COCKTAILS</h3>
@@ -326,9 +439,65 @@ function Menu() {
                   <dt className="drinkname"><strong>{bottle.name} <span className="drinkprice">{bottle.bottle}</span></strong></dt>
                 </>
               )}
-              <h3 id="abouttitle"className="uk-text-lead">SPIRITS</h3>
+              <h3 id="tequilaTitle"className="uk-text-lead">TEQUILA & MEZCAL</h3>
               <h5 id="glass">GLASS</h5>
-              {spirits.map(spirit =>
+              {filterTequila().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="vodkaTitle"className="uk-text-lead">VODKA</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterVodka().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="ginTitle"className="uk-text-lead">GIN</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterGin().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="rumTitle"className="uk-text-lead">RUM</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterRum().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="asianTitle"className="uk-text-lead">ASIAN SPIRITS</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterAsian().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="scotchTitle"className="uk-text-lead">SCOTCH</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterScotch().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="japaneseTitle"className="uk-text-lead">JAPANESE</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterJapan().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="bourbonTitle"className="uk-text-lead">BOURBON, RYE, IRISH</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterBourbon().map(spirit =>
+                <>
+                  <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
+                </>
+              )}
+              <h3 id="cognacTitle"className="uk-text-lead">COGNAC</h3>
+              <h5 id="glass">GLASS</h5>
+              {filterCognac().map(spirit =>
                 <>
                   <dt className="drinkname"><strong>{spirit.name} <span className="drinkprice">{spirit.glass}</span></strong></dt>
                 </>

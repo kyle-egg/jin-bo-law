@@ -97,9 +97,22 @@ background-color: black;
   font-stretch: expanded;
 }
 
+#reservations {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin-top: -100px;
+}
+
 .paratext {
   color: whitesmoke;
   font-weight: 100;
+}
+
+.eventtext {
+  color: black;
+  font-weight: 100;
+  text-align: right;
 }
 
 #whitegradient {
@@ -280,6 +293,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
 #stickymenu {
   padding: 0px;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 #cocktailsTitle {
@@ -310,13 +325,262 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   font-stretch: expanded;
 }
 
+#tequilaTitle {
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#vodkaTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#ginTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#rumTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#asianTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#scotchTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#japaneseTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#bourbonTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+#cognacTitle{
+  color: #dbac6d;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
 .uk-button {
   background-color:#12748c;
   border: #dbac6d;
   color: #dbac6d;
   border-style: solid;
   border-width: 1px;
+  padding: 0px 5px;
+  margin: 5px 5px;
+  font-size: 10pt;
 }
+
+#cognacbutton {
+  margin-top: -1px;
+}
+
+#shots {
+  background-color:#dbac6d;
+  border:#12748c;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#shot {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin: 20px 0px 0px 0px;
+}
+
+#shottype {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  margin: 0px;
+}
+
+
+#eventright {
+  background-image: url(../assets/eventview.jpg);
+  background-size: cover;
+  height: 350px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#eventcenter {
+  background-image: url(../assets/eventview2.webp);
+  background-size: cover;
+  height: 350px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+#eventleft {
+  background-image: url(../assets/eventview3.webp);
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+.uk-input {
+  background-color:#dbac6d;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 2px #0b2641;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-input:focus {
+  outline: none;
+}
+
+.uk-fieldset { 
+  border:0px;
+  box-shadow: none;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 0px #DDD;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-textarea {
+  background-color:#dbac6d;
+  color: #12748c;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  border-left: solid 0px #DDD;
+border-right: solid 0px #DDD;
+border-bottom: solid 2px #0b2641;
+border-top: none;
+box-shadow: 0 0px 0px #CDCDCD;
+border-radius: 0 0 0px 0px;
+padding: 0px 0;
+}
+
+.uk-textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-textarea:-moz-placeholder { /* Firefox 18- */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.uk-input::-moz-placeholder { /* Firefox 19+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-input:-ms-input-placeholder { /* IE 10+ */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+.uk-input:-moz-placeholder { /* Firefox 18- */
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+#submit {
+  background-color: #dbac6d;
+  border: #0b2641;
+  color: #0b2641;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 10pt;
+  float: left;
+}
+
+#brochure {
+  background-color: #dbac6d;
+  border: #0b2641;
+  color: #0b2641;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 10pt;
+  text-align: right;
+  justify-content: right;
+  align-items: flex-end;
+  margin-left: 200px;
+}
+
+#contacttitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  text-align: left;
+}
+
+#brochuretitle {
+  color: #0b2641;
+  font-weight: 100;
+  font-stretch: expanded;
+  text-align: right;
+}
+
+#privateevent {
+  justify-content: space-between;
+}
+
+.left {
+  height: 550px;
+}
+
+.right {
+  height: 550px;
+  justify-content: right;
+  align-items: flex-end;
+  float: right
+}
+
 
 @media only screen and (max-width: 811px) {
   #homehero {

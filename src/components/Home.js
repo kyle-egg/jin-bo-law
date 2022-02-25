@@ -48,8 +48,7 @@ function Home() {
         <div className="goldcontainer uk-child-width-1-1@s" uk-grid>
           <div>
             <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
-              <h3 id="abouttitle"className="uk-text-lead">RESERVATIONS</h3>
-              
+              <h3 id="reservations" className="uk-text-lead">RESERVATIONS</h3>
             </div>
           </div>     
         </div>

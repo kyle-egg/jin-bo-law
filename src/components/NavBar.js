@@ -17,13 +17,13 @@ function NavBar() {
             <li><a id= "navtext" href="/giftvouchers">Gift Vouchers</a></li>
             <li><a id= "navtext" href="/events">Private Events</a></li>
             <li><a id= "navtext" href="https://my.matterport.com/show/?m=3LVPz6vi2vA">Virtual Tour</a></li>
-            <li><a id= "navtext" href="/contact">Contact Us</a></li>
+            <li><a id= "navtext" href="#footnav">Contact Us</a></li>
           </ul>
         </div>
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">
             <li className="uk-active booknav"><a id= "ighidden" href="https://www.instagram.com/jinbolaw_skybar/" className="uk-margin-small-right" uk-icon="instagram"></a></li>
-            <li className="uk-active booknav"><a id= "navtext" href="/book">Book Now</a></li>
+            <li className="uk-active booknav"><a id= "navtext" href="/#reservations">Book Now</a></li>
             <li className="uk-hidden@l">
               <img id="hamburger" src="https://img.icons8.com/ios/50/000000/menu--v4.png" className="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary"/>
             </li>

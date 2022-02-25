@@ -13,9 +13,9 @@ function SideNav() {
           <li><a id= "navtext" href="/giftvouchers">GIFT VOUCHERS</a></li>
           <li><a id= "navtext" href="/events">PRIVATE EVENTS</a></li>
           <li><a id= "navtext" href="https://my.matterport.com/show/?m=3LVPz6vi2vA">VIRTUAL TOUR</a></li>
-          <li><a id= "navtext" href="#">CONTACT US</a></li>
+          <li><a id= "navtext" href="#footnav">CONTACT US</a></li>
           <li className="uk-nav-divider"></li>
-          <li><a id= "navtext" href="/book">BOOK NOW</a></li>
+          <li><a id= "navtext" href="/#reservations">BOOK NOW</a></li>
         </ul>
       </div>
     </div>
