@@ -1,3 +1,5 @@
+import Pdf from '../assets/private-events.pdf'
+
 function PrivateEvents() {
 
   return (
@@ -25,7 +27,7 @@ function PrivateEvents() {
                         <input className="uk-input" type="text" placeholder="PHONE"/>
                       </div>
                       <div className="uk-margin">
-                        <textarea className="uk-textarea" rows="5" placeholder="MESSAGE"></textarea>
+                        <textarea className="uk-textarea" rows="2" placeholder="MESSAGE"></textarea>
                       </div>
                       <div className="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                         <label><input className="uk-checkbox" type="checkbox"/> Subscribe Me To The Jin Bo Law Skybar Newsletter</label>
@@ -39,7 +41,9 @@ function PrivateEvents() {
                   <br></br>
                   <p className="eventtext"> Discover how we can help you host your next big event. <br></br>Our unique venue with multiple spaces that boasts <br></br>unparalleled views of London&apos;s iconic skyline.
                   </p>
-                  <button id='brochure' className="uk-button">DOWNLOAD EVENT BROCHURE</button>
+                  <a href={Pdf}>
+                    <button id='brochure' className="uk-button">DOWNLOAD EVENT BROCHURE</button>
+                  </a>
                 </div>
               </div>
             </div>

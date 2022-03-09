@@ -571,13 +571,13 @@ padding: 0px 0;
 }
 
 .left {
-  height: 550px;
+  height: 400px;
+  padding: 50px 10px;
 }
 
 .right {
-  height: 550px;
-  justify-content: right;
-  align-items: flex-end;
+  height: 400px;
+  padding: 50px 10px;
   float: right
 }
 
@@ -607,6 +607,11 @@ padding: 0px 0;
     font-stretch: expanded;
     font-size: small;
   }
+  #menuhero {
+    background-position: bottom;
+    height: 600px;
+
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -631,6 +636,43 @@ padding: 0px 0;
   #homethumb {
     height: 150px;
     font-size: small;
+  }
+  .drinkname {
+    text-align: left;
+    padding: 0px;
+  }
+  
+  .drinkdescription {
+    text-align: left;
+    color: #2c4044;
+    padding: 0px 10px 0px 0px;
+  }
+  
+  .drinkprice {
+    float: right;
+    padding: 0px 25px 0px 25px;
+  }
+  
+  .drinkglass {
+    float: right;
+    margin: 0px 25px 0px 25px;
+  }
+  
+  .drinkbottle {
+    float: right;
+    padding: 0px 25px 0px 25px;
+  }
+  
+  #served {
+    padding: 0px;
+  }
+  
+  #glass {
+    color: #dbac6d;
+    font-weight: 100;
+    font-stretch: expanded;
+    padding: 0px 50px;
+    text-align: right;
   }
 }
 
